@@ -18,16 +18,24 @@ public class PersonalityMatcher
         student4.firstName="Mark";
         student4.lastName="Doe";
         student4.dob="04/05/2026";
+       // student4.gender = "a";
+
+        Student student5 =new Student();
+        student5.firstName="Mervin";
+        student5.lastName="Doesi";
+        student5.dob="04/05/2026";
+        // student4.gender = "a";
 
         List<Student> studentList = new ArrayList<>();
         studentList.add(student1);
         studentList.add(student2);
         studentList.add(student3);
         studentList.add(student4);
+        studentList.add(student5);
 
         for (Student s: studentList)
         {
-            s.printStudent();
+            s.printStudentDetails();
         }
     }
 }
